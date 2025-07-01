@@ -11,11 +11,10 @@
       padding: 2rem;
       background-color: #fdfdfd;
       color: #111;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       line-height: 1.6;
+      text-align: center;
     }
+
     nav {
       position: sticky;
       top: 0;
@@ -23,30 +22,37 @@
       padding: 1rem 0;
       width: 100%;
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      gap: 1.5rem;
+      gap: 1rem;
       border-bottom: 1px solid #ccc;
       z-index: 1000;
     }
+
     nav a {
-      color: #004c99;
-      text-decoration: none;
-      font-size: 1.1rem;
-    }
+  color: #004c99;
+  text-decoration: none;
+  font-size: 1.05rem;
+  padding: 0.25rem 0.5rem;
+  white-space: nowrap; /* ✅ Fixes broken link text */
+}
+
+
+
     nav a:hover {
       text-decoration: underline;
     }
+
     h1 {
-      font-size: 2.2rem;
-      margin-bottom: 1.5rem;
-      text-align: center;
-    }
-    .announcement {
-      max-width: 800px;
-      text-align: justify;
-      font-size: 1.2rem;
+      font-size: 2.4rem;
       margin-bottom: 2rem;
     }
+
+    .announcement {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
     .announcement-image {
       width: 260px;
       height: 260px;
@@ -55,6 +61,11 @@
       border-radius: 50%;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      padding: 0 1rem;
     }
   </style>
 </head>
@@ -68,11 +79,9 @@
     <a href="popularisation.html">Popularisation</a>
   </nav>
 
-  <h1>Recent Announcement</h1>
-
-  <img src="janaderrida.jpg" alt="Jana receiving the Jacques Derrida Prize" class="announcement-image" />
-
   <div class="announcement">
+    <h1>Recent Announcement</h1>
+    <img src="janaderrida.jpg" alt="Jana receiving Derrida prize" class="announcement-image" />
     <p>
       On the 26th of June, I was awarded 3rd place Jacques Derrida prize in social sciences and humanities.
       Thanks to all that made it possible!
@@ -81,3 +90,4 @@
 
 </body>
 </html>
+
