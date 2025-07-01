@@ -38,12 +38,43 @@
     }
     h1 {
       font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
+    .media-image {
+      width: 260px;
+      height: 260px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       margin-bottom: 2rem;
     }
-    .content {
+    .media-links {
       max-width: 800px;
-      font-size: 1.2rem;
-      text-align: justify;
+      font-size: 1.1rem;
+    }
+    .media-item {
+      display: flex;
+      align-items: center;
+      margin: 0.75rem 0;
+    }
+    .media-item img.flag {
+      width: 16px;
+      height: 12px;
+      margin-right: 0.6rem;
+      flex-shrink: 0;
+    }
+    .media-item a {
+      color: #004c99;
+      text-decoration: none;
+    }
+    .media-item a:hover {
+      text-decoration: underline;
+    }
+    .note {
+      font-size: 0.95rem;
+      color: #555;
+      margin-left: 1.85rem;
     }
   </style>
 </head>
@@ -58,10 +89,50 @@
   </nav>
 
   <h1>In Media</h1>
+  <img src="janaradio.jpg" alt="Jana Nenadalová in studio" class="media-image" />
 
-  <div class="content">
-    <p>[Here you'll find articles about Jana's research, public interviews, and recordings of lectures or panel talks. YouTube links and articles will be added here later.]</p>
+  <div class="media-links">
+
+    <div class="media-item">
+      <img src="https://flagcdn.com/16x12/cz.png" alt="Czech" class="flag" />
+      <a href="https://dennikn.sk/4662551/citili-ste-niekedy-pritomnost-duchov-ci-skriatkov-vedci-pouzili-vr-okuliare-aby-jav-skumali-vo-virtualnom-hmlistom-lese" target="_blank">
+        Have you ever felt the presence of ghosts or goblins? Scientists used VR to study it in a virtual foggy forest
+      </a>
+    </div>
+
+    <div class="media-item">
+      <img src="https://flagcdn.com/16x12/cz.png" alt="Czech" class="flag" />
+      <a href="https://www.ceskatelevize.cz/porady/10441287766-studio-6-vikend/225411010120524" target="_blank">
+        Studio 6 Víkend – Interview on Czech Television
+      </a>
+    </div>
+    <div class="note">Relevant segment starts at 53:38</div>
+
+    <div class="media-item">
+      <img src="https://flagcdn.com/16x12/cz.png" alt="Czech" class="flag" />
+      <a href="https://ct24.ceskatelevize.cz/clanek/veda/experimentalni-religioniste-z-brna-zkoumali-proc-v-temnote-tusime-jine-bytosti-348371" target="_blank">
+        Experimental religion scholars from Brno studied why we sense other beings in the dark
+      </a>
+    </div>
+
+    <div class="media-item">
+      <img src="https://flagcdn.com/16x12/gb.png" alt="English" class="flag" />
+      <a href="https://www.psypost.org/new-psychology-study-sheds-light-on-mysterious-feelings-of-presence-during-isolation/" target="_blank">
+        New psychology study sheds light on mysterious feelings of presence during isolation
+      </a>
+    </div>
+
+    <div class="media-item">
+      <img src="https://flagcdn.com/16x12/cz.png" alt="Czech" class="flag" />
+      <a href="https://wave.rozhlas.cz/tma-ticho-samota-a-pocity-cizi-pritomnosti-vyzkumnice-jana-nenadalova-udelala-9287267" target="_blank">
+        Darkness, silence, solitude, and the feeling of someone else's presence – an interview with Jana Nenadalová
+      </a>
+    </div>
+
   </div>
 
 </body>
 </html>
+
+
+
