@@ -17,17 +17,19 @@
       line-height: 1.6;
     }
     nav {
-      position: sticky;
-      top: 0;
-      background: #fdfdfd;
-      padding: 1rem 0;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      border-bottom: 1px solid #ccc;
-      z-index: 1000;
-    }
+  position: sticky;
+  top: 0;
+  background: #fdfdfd;
+  padding: 1rem 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 0.5rem;
+  column-gap: 1rem; /* smaller gap works better on mobile */
+  border-bottom: 1px solid #ccc;
+  z-index: 1000;
+}
     nav a {
   color: #004c99;
   text-decoration: none;
