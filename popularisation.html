@@ -11,9 +11,6 @@
       padding: 2rem;
       background-color: #fdfdfd;
       color: #111;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       line-height: 1.6;
     }
     nav {
@@ -37,21 +34,71 @@
       text-decoration: underline;
     }
     h1 {
+      text-align: center;
       font-size: 2.4rem;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
     }
-    .subtitle {
+
+    .media-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .media-column {
+      flex: 1 1 400px;
+      max-width: 600px;
+    }
+
+    .media-column h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .media-item {
       display: flex;
       align-items: center;
-      font-size: 1.3rem;
-      margin: 1rem 0 1.5rem;
-      gap: 0.6rem;
+      margin: 0.75rem 0;
     }
-    .subtitle img {
+    .media-item img.flag {
       width: 16px;
       height: 12px;
+      margin-right: 0.6rem;
       flex-shrink: 0;
     }
+    .media-item a {
+      color: #004c99;
+      text-decoration: none;
+    }
+    .media-item a:hover {
+      text-decoration: underline;
+    }
+
+    .video-title {
+      display: flex;
+      align-items: center;
+      font-size: 1.1rem;
+      margin: 1.25rem 0 0.5rem;
+      gap: 0.5rem;
+    }
+
+    .video-frame {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
     .popular-image {
       width: 260px;
       height: 260px;
@@ -59,20 +106,8 @@
       object-position: top;
       border-radius: 50%;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      margin-bottom: 1rem;
-    }
-    .video-container {
-      max-width: 800px;
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      margin-bottom: 2rem;
-    }
-    iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: block;
+      margin: 0 auto 2rem;
     }
   </style>
 </head>
@@ -90,22 +125,66 @@
 
   <img src="janaposter.jpg" alt="Jana Nenadalová – poster" class="popular-image" />
 
-  <div class="subtitle">
-    <img src="https://flagcdn.com/16x12/cz.png" alt="Czech Flag" />
-    <span>Why people see ghosts and spirits?</span>
-  </div>
+  <div class="media-grid">
 
-  <div class="video-container">
-    <iframe
-      src="https://www.youtube.com/embed/Ch8TnQr2P1w?start=3333"
-      title="Discussion on psychedelics and altered states – Reflexe 2024"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
+    <!-- Column 1: Writing -->
+    <div class="media-column">
+      <h2>Writing</h2>
+
+      <div class="media-item">
+        <img src="https://flagcdn.com/16x12/cz.png" alt="Czech Flag" class="flag" />
+        <a href="https://magazin-legalizace.cz/author/jananenandalova/" target="_blank">
+          Articles by Jana Nenadalová – Legalizace magazine
+        </a>
+      </div>
+
+      <div class="media-item">
+        <img src="https://flagcdn.com/16x12/cz.png" alt="Czech Flag" class="flag" />
+        <a href="https://denikn.cz/autor/jana-nenadalova/" target="_blank">
+          Articles by Jana Nenadalová – Deník N
+        </a>
+      </div>
+
+      <div class="media-item">
+        <img src="https://flagcdn.com/16x12/cz.png" alt="Czech Flag" class="flag" />
+        <a href="https://journals.phil.muni.cz/sacra/issue/view/2253" target="_blank">
+          SACRA – Issue on Religion and Epydemics 
+        </a>
+      </div>
+
+      <div class="media-item">
+        <img src="https://flagcdn.com/16x12/cz.png" alt="Czech Flag" class="flag" />
+        <a href="https://itvar.cz/pritomnosti" target="_blank">
+          The Presents – Literary reflection (Tvar journal)
+        </a>
+      </div>
+    </div>
+
+    <!-- Column 2: Videos -->
+    <div class="media-column">
+      <h2>Videos</h2>
+
+      <div class="video-title">
+        <img src="https://flagcdn.com/16x12/cz.png" alt="Czech Flag" />
+        <span>Why people see ghosts and spirits?</span>
+      </div>
+
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/Ch8TnQr2P1w"
+          title="Why people see ghosts and spirits?"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    </div>
+
   </div>
 
 </body>
 </html>
+
 
 
 
