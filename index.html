@@ -37,13 +37,24 @@
       text-decoration: underline;
     }
     h1 {
-      font-size: 2.4rem;
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .announcement {
+      max-width: 800px;
+      text-align: justify;
+      font-size: 1.2rem;
       margin-bottom: 2rem;
     }
-    .content {
-      max-width: 800px;
-      font-size: 1.2rem;
-      text-align: justify;
+    .announcement-image {
+      width: 260px;
+      height: 260px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
     }
   </style>
 </head>
@@ -57,10 +68,15 @@
     <a href="popularisation.html">Popularisation</a>
   </nav>
 
-  <h1>News & Announcements</h1>
+  <h1>Recent Announcement</h1>
 
-  <div class="content">
-    <p>[This section will include upcoming talks, new publications, academic events, and research updates. Placeholder for now.]</p>
+  <img src="janaderrida.jpg" alt="Jana receiving the Jacques Derrida Prize" class="announcement-image" />
+
+  <div class="announcement">
+    <p>
+      On the 26th of June, I was awarded 3rd place Jacques Derrida prize in social sciences and humanities.
+      Thanks to all that made it possible!
+    </p>
   </div>
 
 </body>
