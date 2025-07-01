@@ -16,6 +16,26 @@
       align-items: center;
       line-height: 1.6;
     }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #fdfdfd;
+      padding: 1rem 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      border-bottom: 1px solid #ccc;
+      z-index: 1000;
+    }
+    nav a {
+      color: #004c99;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
     .portrait {
       width: 260px;
       height: 260px;
@@ -39,30 +59,45 @@
       text-align: center;
     }
     .research h2 { font-size: 2rem; margin-bottom: 1rem; }
+    .section {
+      max-width: 800px;
+      margin-bottom: 3rem;
+    }
   </style>
 </head>
 <body>
-  <img src="janaportrait.jpg" alt="Jana Nenadalová" class="portrait" />
-<h1>Jana Nenadalová</h1>
 
-<p>
-  I am a cognitive scientist and religious studies scholar specializing in processual understanding of unusual human experiences. Being deemed religious, spiritual, psychedelic, strange, or any other way, these experiences can serve important individual and societal functions and are part of our life experiences.
-</p>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#research">Research</a>
+    <a href="#inmedia">In Media</a>
+    <a href="#popular">Popularisation</a>
+  </nav>
 
-<p>
-  My work bridges quantitative and experimental psychological research with ethnographic and qualitative insights into how processes of perception, individual psychology, and sociocultural learning form specific types of experiences in resonance with given environments. I am narrowing down these experiences into respective factors and feelings, such as feelings of presence and the role of solitude, authority, and sensory deprivation, and studying them across secular and alternative spiritual contexts of European countries to non-Western societies, such as Mauritius.
-</p>
-
-<p>
-  I am currently working as a post-doc researcher and lecturer in the Laboratory for the Experimental Research of Religion, Department for the Study of Religions at Masaryk University, and collaborating on research projects with several partners from institutions across the world.
-</p>
-  <div class="links">
-    <a href="mailto:jnenadalova@mail.muni.cz">Email</a>
-    <a href="https://github.com/StochasticCat" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+  <div id="home" class="section">
+    <img src="janaportrait.jpg" alt="Jana Nenadalová" class="portrait" />
+    <h1>Jana Nenadalová</h1>
   </div>
 
-  <div class="research">
+  <div id="about" class="section">
+    <p>
+      I am a cognitive scientist and religious studies scholar specializing in processual understanding of unusual human experiences. Being deemed religious, spiritual, psychedelic, strange, or any other way, these experiences can serve important individual and societal functions and are part of our life experiences.
+    </p>
+    <p>
+      My work bridges quantitative and experimental psychological research with ethnographic and qualitative insights into how processes of perception, individual psychology, and sociocultural learning form specific types of experiences in resonance with given environments. I am narrowing down these experiences into respective factors and feelings, such as feelings of presence and the role of solitude, authority, and sensory deprivation, and studying them across secular and alternative spiritual contexts of European countries to non-Western societies, such as Mauritius.
+    </p>
+    <p>
+      I am currently working as a post-doc researcher and lecturer in the Laboratory for the Experimental Research of Religion, Department for the Study of Religions at Masaryk University, and collaborating on research projects with several partners from institutions across the world.
+    </p>
+    <div class="links">
+      <a href="mailto:jnenadalova@mail.muni.cz">Email</a>
+      <a href="https://github.com/StochasticCat" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+
+  <div id="research" class="research section">
     <h2>Research & Publications</h2>
     <a href="https://www.levyna.cz/en/our-team/jana-nenadalova" target="_blank">
       LEVYNA Profile & Lab Page
@@ -77,5 +112,16 @@
       "Sensing ghosts and other dangerous beings" (2024)
     </a>
   </div>
+
+  <div id="inmedia" class="section">
+    <h2>In Media</h2>
+    <p>[Here you can include links to articles, interviews, and YouTube talks. Placeholder for now.]</p>
+  </div>
+
+  <div id="popular" class="section">
+    <h2>Popularisation & Media Writing</h2>
+    <p>[This section will include Jana's popular articles, such as those published in *Legalizace* and other journalistic outlets. Placeholder for now.]</p>
+  </div>
+
 </body>
 </html>
