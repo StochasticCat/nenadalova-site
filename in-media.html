@@ -11,9 +11,6 @@
       padding: 2rem;
       background-color: #fdfdfd;
       color: #111;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       line-height: 1.6;
     }
 
@@ -46,22 +43,26 @@
 
     h1 {
       font-size: 2.4rem;
-      margin-bottom: 1rem;
-    }
-
-    .media-image {
-      width: 260px;
-      height: 260px;
-      object-fit: cover;
-      object-position: top;
-      border-radius: 50%;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       margin-bottom: 2rem;
+      text-align: center;
     }
 
-    .media-links {
-      max-width: 800px;
-      font-size: 1.1rem;
+    .media-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .media-column {
+      flex: 1 1 400px;
+      max-width: 600px;
+    }
+
+    .media-column h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      text-align: center;
     }
 
     .media-item {
@@ -91,6 +92,16 @@
       color: #555;
       margin-left: 1.85rem;
     }
+
+    .spotify-embed {
+      margin-top: 1.5rem;
+    }
+
+    iframe {
+      border: none;
+      width: 100%;
+      border-radius: 12px;
+    }
   </style>
 </head>
 <body>
@@ -104,51 +115,73 @@
   </nav>
 
   <h1>In Media</h1>
-  <img src="janaradio.jpg" alt="Jana Nenadalová in studio" class="media-image" />
 
-  <div class="media-links">
+  <div class="media-grid">
 
-    <div class="media-item">
-      <img src="https://flagcdn.com/16x12/cz.png" alt="Czech" class="flag" />
-      <a href="https://dennikn.sk/4662551/citili-ste-niekedy-pritomnost-duchov-ci-skriatkov-vedci-pouzili-vr-okuliare-aby-jav-skumali-vo-virtualnom-hmlistom-lese" target="_blank">
-        Have you ever felt the presence of ghosts or goblins? Scientists used VR to study it in a virtual foggy forest
-      </a>
+    <!-- Left Column: Writing -->
+    <div class="media-column">
+      <h2>Read</h2>
+
+      <div class="media-item">
+        <img src="https://flagcdn.com/16x12/cz.png" alt="Czech" class="flag" />
+        <a href="https://dennikn.sk/4662551/citili-ste-niekedy-pritomnost-duchov-ci-skriatkov-vedci-pouzili-vr-okuliare-aby-jav-skumali-vo-virtualnom-hmlistom-lese" target="_blank">
+          Have you ever felt the presence of ghosts or goblins? Scientists used VR to study it in a virtual foggy forest
+        </a>
+      </div>
+
+      <div class="media-item">
+        <img src="https://flagcdn.com/16x12/cz.png" alt="Czech" class="flag" />
+        <a href="https://ct24.ceskatelevize.cz/clanek/veda/experimentalni-religioniste-z-brna-zkoumali-proc-v-temnote-tusime-jine-bytosti-348371" target="_blank">
+          Experimental religion scholars from Brno studied why we sense other beings in the dark
+        </a>
+      </div>
+
+      <div class="media-item">
+        <img src="https://flagcdn.com/16x12/gb.png" alt="English" class="flag" />
+        <a href="https://www.psypost.org/new-psychology-study-sheds-light-on-mysterious-feelings-of-presence-during-isolation/" target="_blank">
+          New psychology study sheds light on mysterious feelings of presence during isolation
+        </a>
+      </div>
+
+      <div class="media-item">
+        <img src="https://flagcdn.com/16x12/cz.png" alt="Czech" class="flag" />
+        <a href="https://wave.rozhlas.cz/tma-ticho-samota-a-pocity-cizi-pritomnosti-vyzkumnice-jana-nenadalova-udelala-9287267" target="_blank">
+          Darkness, silence, solitude, and the feeling of someone else's presence – an interview with Jana Nenadalová
+        </a>
+      </div>
     </div>
 
-    <div class="media-item">
-      <img src="https://flagcdn.com/16x12/cz.png" alt="Czech" class="flag" />
-      <a href="https://www.ceskatelevize.cz/porady/10441287766-studio-6-vikend/225411010120524" target="_blank">
-        Studio 6 Víkend – Interview on Czech Television
-      </a>
-    </div>
-    <div class="note">Relevant segment starts at 53:38</div>
+    <!-- Right Column: Other Media -->
+    <div class="media-column">
+      <h2>Watch and listen</h2>
 
-    <div class="media-item">
-      <img src="https://flagcdn.com/16x12/cz.png" alt="Czech" class="flag" />
-      <a href="https://ct24.ceskatelevize.cz/clanek/veda/experimentalni-religioniste-z-brna-zkoumali-proc-v-temnote-tusime-jine-bytosti-348371" target="_blank">
-        Experimental religion scholars from Brno studied why we sense other beings in the dark
-      </a>
-    </div>
+      <div class="media-item">
+        <img src="https://flagcdn.com/16x12/gb.png" alt="English" class="flag" />
+        <span>Interview on <em>The Last Show with David Cooper</em></span>
+      </div>
+      <div class="note">The relevant segment starts at 19:59.</div>
 
-    <div class="media-item">
-      <img src="https://flagcdn.com/16x12/gb.png" alt="English" class="flag" />
-      <a href="https://www.psypost.org/new-psychology-study-sheds-light-on-mysterious-feelings-of-presence-during-isolation/" target="_blank">
-        New psychology study sheds light on mysterious feelings of presence during isolation
-      </a>
-    </div>
+      <div class="spotify-embed">
+        <iframe 
+          src="https://open.spotify.com/embed/episode/3RwTvIXyt5B0iutiZjs1II?utm_source=generator"
+          height="352"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy">
+        </iframe>
+      </div>
 
-    <div class="media-item">
-      <img src="https://flagcdn.com/16x12/cz.png" alt="Czech" class="flag" />
-      <a href="https://wave.rozhlas.cz/tma-ticho-samota-a-pocity-cizi-pritomnosti-vyzkumnice-jana-nenadalova-udelala-9287267" target="_blank">
-        Darkness, silence, solitude, and the feeling of someone else's presence – an interview with Jana Nenadalová
-      </a>
+      <div class="media-item">
+        <img src="https://flagcdn.com/16x12/cz.png" alt="Czech" class="flag" />
+        <a href="https://www.ceskatelevize.cz/porady/10441287766-studio-6-vikend/225411010120524" target="_blank">
+          Studio 6 Víkend – Interview on Czech Television
+        </a>
+      </div>
+      <div class="note">Relevant segment starts at 53:38</div>
+
     </div>
 
   </div>
 
 </body>
 </html>
-
-
-
 
